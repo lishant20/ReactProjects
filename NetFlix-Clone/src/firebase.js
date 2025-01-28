@@ -1,4 +1,5 @@
 // Import the functions you need from the SDKs you need
+import 'dotenv/config';
 import { initializeApp } from "firebase/app";
 import {createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signOut} from "firebase/auth";
 import {addDoc, collection, getFirestore} from "firebase/firestore"
@@ -8,7 +9,7 @@ import { toast } from "react-toastify";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCrukstmPfsaBXHPcesxo8_Gapbki2a-zA",
+  apiKey: api,
   authDomain: "netflix-clone-6b1bd.firebaseapp.com",
   projectId: "netflix-clone-6b1bd",
   storageBucket: "netflix-clone-6b1bd.firebasestorage.app",
